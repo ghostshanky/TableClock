@@ -1,0 +1,5 @@
+{
+  "appId": "com.tableclock.app",
+  "appName": "TableClock",
+  "webDir": "dist"
+}

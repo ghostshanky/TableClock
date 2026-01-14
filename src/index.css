@@ -1,0 +1,95 @@
+:root {
+  /* --- Core Palette --- */
+  --color-bg: #212329;
+  /* Requested Gray */
+  --color-bg-subtle: #2f323b;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #aaaaaa;
+  --color-text-muted: #666666;
+
+  /* --- Neon Accents --- */
+  --color-accent-primary: #00f2ff;
+  /* Cyan Neon */
+  --color-accent-secondary: #ff0055;
+  /* Magenta Neon */
+  --color-accent-warn: #ffcc00;
+  /* Amber Warning */
+  --color-accent-success: #00ff66;
+
+  /* --- Glassmorphism --- */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-blur: 20px;
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+
+  /* --- Typography --- */
+  --font-family-main: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* --- Spacing --- */
+  --space-xs: 1vmin;
+  --space-sm: 2vmin;
+  --space-md: 4vmin;
+  --space-lg: 6vmin;
+  --space-xl: 8vmin;
+
+  /* --- Animations --- */
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Night Mode Overrides */
+body.night-mode {
+  --color-bg: #000000;
+  --color-text-primary: #ff4444;
+  /* Dim Red */
+  --color-text-secondary: #770000;
+  --color-accent-primary: #ff0000;
+  --color-accent-secondary: #990000;
+  --glass-bg: rgba(20, 0, 0, 0.3);
+  --glass-border: rgba(255, 0, 0, 0.1);
+}
+
+/* Global Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  /* App-like feel */
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-main);
+  overflow: hidden;
+  /* Prevent scrolling on clock screen */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Utility: Center Absolute */
+.center-abs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Utility: Flex Center */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
