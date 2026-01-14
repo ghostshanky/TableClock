@@ -1,7 +1,7 @@
 # TableClock 🕰️
 
 <p align="center">
-  <img src="./public/logo.png" alt="Table Clock Preview" width="100" style="border-radius: 5%; object-fit: cover;">
+  <img src="./public/logo.png" alt="Table Clock Preview" width="100" >
 </p>
 
 
@@ -36,7 +36,7 @@ just kidding its a normal table clock :)
 ### Web / PWA
 TableClock is built as a Progressive Web App (PWA).
 1.  Open the hosted URL.
-2.  Click "Install" in your browser bar.
+2.  Explore.
 
 ### Android
 Download the **TableClock.apk** from the releases page to install on your Android tablet or phone.
@@ -48,7 +48,10 @@ Download the **TableClock.apk** from the releases page to install on your Androi
 -   **CSS Variables** - Theming Engine
 
 ## 📸 Gallery
-*just go to that website to see faces*
+
+*You can visit the [website][1] to see faces.*
+
+[1]: https://tableclock.vercel.app/
 
 ---
 *Designed for minimalists.*
